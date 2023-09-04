@@ -1,3 +1,8 @@
+/* Doy color al fondo de pagina */
+body{
+    background-color: rgb(0, 225, 255);
+}
+
 h1{
     color:red;
 }
@@ -17,7 +22,14 @@ h2{
 }
 .parrafo1{
     color:green;
+    background-color: red;
 }
 .parrafo2{
-    color:black (135, 135, 222)
+    color:black (135, 135, 222);
+    background-color: white;
+
 }
+/* Machaco valores anteriorres de h2 */
+/* h2{
+    background-color:magenta;
+} */
