@@ -4,6 +4,20 @@ h1{
 h2{
     color:aqua
 }
+/* Al estar en cascada el h2 toma valores de abajo por id y clase */
 #cabecera1{
     color:green;
+}
+/* Seleccion por clase . */
+.cabecera2{
+    color:blue;
+}
+.cabecera3{
+    color:yellow;
+}
+.parrafo1{
+    color:green;
+}
+.parrafo2{
+    color:black (135, 135, 222)
 }
