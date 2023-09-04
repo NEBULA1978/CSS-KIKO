@@ -1,11 +1,20 @@
+/* quito margen por defecto */
+*{
+    margin: 0;
+
+}
+
 /* Doy color al fondo de pagina */
 body{
-    margin: 0;
     background-color: rgb(0, 225, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 h1{
-    color:red;
+    /* si pongo no veo el texto en negro */
+    /* color:red; */
+    
+    background-color: white;
 }
 h2{
     color:aqua
@@ -31,11 +40,16 @@ h2{
     text-align: justify;
     /* Tamaño e teto */
     font-size: 20px;
+    /* poner texto en negrita */
+    font-weight: bold;
+    font-style: italic;
 }
 .parrafo2{
     color:black (135, 135, 222);
     background-color: white;
-
+    font-weight: bold;
+    /* en cursiva */
+    font-style: italic;
 }
 /* Machaco valores anteriorres de h2 */
 h2{
@@ -52,6 +66,12 @@ h2{
     width:190px;
     /* Alto de h2 */
     height: 150px;
+    /* poner texto en negrita */
+    /* font-weight: bold; */
 
 
+}
+
+.text-danger{
+    color:red;
 }
