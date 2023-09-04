@@ -1,121 +1,115 @@
-/* quito margen por defecto */
+/* Reset margin and padding for all elements */
 * {
     margin: 0;
-
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Doy color al fondo de pagina */
+/* Set background color and font family for the body */
 body {
     background-color: rgb(0, 225, 255);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+/* Style for the header */
 .header {
     background-color: red;
-    height: 40px;
-    width: 100%;
-    margin: 5px;
-    float: left;
+    padding: 10px;
+    /* Add padding to the header */
 }
 
+/* Style for the sidebar */
 .sidebar {
-    float: left;
     width: 25%;
-    height: 400px;
     background-color: khaki;
+    padding: 10px;
+    /* Add padding to the sidebar */
 }
 
+/* Style for the main content area */
 .content {
-    float: left;
     width: 75%;
-    height: 400px;
     background-color: blue;
+    padding: 10px;
+    overflow: hidden;
+    /* Hide overflowing content */
 }
 
-.footer {
-    float: left;
-    width: 100%;
-    height: 50px;
-    background-color: green;
-}
-
+/* Style for individual boxes within the content */
 .box {
-    width: 100px;
-    height: 100px;
+    width: 100%;
+    height: auto;
+    /* Allow the height to adjust based on content */
     background-color: gray;
     margin: 5px;
-    float: left;
+    padding: 10px;
 }
 
+/* Style for h1 elements */
 h1 {
-    /* si pongo no veo el texto en negro */
-    /* color:red; */
-
     background-color: white;
 }
 
+/* Style for h2 elements */
 h2 {
-    color: aqua
+    color: aqua;
+    background-color: magenta;
+    /* Add background color to h2 */
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    border: 5px solid white;
+    font-weight: bold;
+    overflow: hidden;
+    /* Hide overflowing content in h2 elements */
 }
 
-/* Al estar en cascada el h2 toma valores de abajo por id y clase */
-#cabecera1 {
-    color: green;
-    text-align: center;
-}
-
-/* Seleccion por clase . */
+/* Style for .cabecera2 class */
 .cabecera2 {
-    color: blue;
     text-align: left;
 }
 
+/* Style for .cabecera3 class */
 .cabecera3 {
-    color: yellow;
-    /* centramos tetos */
     text-align: right;
 }
 
+/* Style for .parrafo1 class */
 .parrafo1 {
     color: green;
     background-color: red;
     text-align: justify;
-    /* Tamaño e teto */
     font-size: 20px;
-    /* poner texto en negrita */
     font-weight: bold;
     font-style: italic;
 }
 
+/* Style for .parrafo2 class */
 .parrafo2 {
-    color: black (135, 135, 222);
+    color: #8787DE;
+    /* Correct the color property */
     background-color: white;
     font-weight: bold;
-    /* en cursiva */
     font-style: italic;
 }
 
-/* Machaco valores anteriorres de h2 */
-h2 {
-    background-color: magenta;
-    /* Entre  abajo 1º h2 y abajo de 3º h2 separa */
-    margin-bottom: 30px;
-    /* Entre arriba h2 1º y arriba 3º deja espacio */
-    margin-top: 20px;
-    /* relleno  entre elemento interior h2  separa up y down*/
-    padding: 20px;
-    /* borde: crea borde en contenido h2 */
-    border: 15px solid white;
-    /* Ancho de h2 */
-    width: 190px;
-    /* Alto de h2 */
-    height: 150px;
-    /* poner texto en negrita */
-    /* font-weight: bold; */
-
-
-}
-
+/* Style for .text-danger class */
 .text-danger {
     color: red;
 }
+
+/* propiedades CSS */
+/* width: 100%;
+: Esta propiedad establece el ancho del elemento al 100% del ancho de su contenedor principal. En este contexto,
+asegura que el elemento (en este caso, <h2>) ocupe todo el ancho disponible dentro de su contenedor. margin-bottom: 10px;
+y margin-top: 10px;
+: Estas propiedades establecen los márgenes superior e inferior del elemento en 10 píxeles. Los márgenes crean espacio alrededor de un elemento,
+y en este caso,
+añaden espacio encima y debajo del elemento <h2>. padding: 10px;
+: El "padding" es el espacio dentro del elemento,
+entre el contenido y el borde. Esta propiedad establece un espacio de 10 píxeles en todos los lados del elemento. border: 5px solid white;
+: Esta propiedad añade un borde alrededor del elemento. Consiste en un borde de 5 píxeles de ancho,
+de estilo sólido y de color blanco. El borde crea una separación visual entre el elemento y sus elementos vecinos. font-weight: bold;
+: Esta propiedad hace que el texto dentro del elemento aparezca en negrita. El texto con un peso de fuente "bold" se ve más grueso y enfatizado. overflow: hidden;
+: Esta propiedad se utiliza para gestionar el contenido que se desborda de los límites del elemento. Si el contenido dentro del elemento supera el espacio disponible,
+se ocultará y no se mostrarán barras de desplazamiento. Se utiliza a menudo para evitar que el contenido se derrame fuera de su contenedor. */
