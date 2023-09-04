@@ -1,5 +1,6 @@
 /* Doy color al fondo de pagina */
 body{
+    margin: 0;
     background-color: rgb(0, 225, 255);
 }
 
@@ -12,17 +13,24 @@ h2{
 /* Al estar en cascada el h2 toma valores de abajo por id y clase */
 #cabecera1{
     color:green;
+    text-align: center;
 }
 /* Seleccion por clase . */
 .cabecera2{
     color:blue;
+    text-align: left;
 }
 .cabecera3{
     color:yellow;
+    /* centramos tetos */
+    text-align: right;
 }
 .parrafo1{
     color:green;
     background-color: red;
+    text-align: justify;
+    /* Tamaño e teto */
+    font-size: 20px;
 }
 .parrafo2{
     color:black (135, 135, 222);
@@ -30,6 +38,20 @@ h2{
 
 }
 /* Machaco valores anteriorres de h2 */
-/* h2{
+h2{
     background-color:magenta;
-} */
+    /* Entre  abajo 1º h2 y abajo de 3º h2 separa */
+    margin-bottom: 30px;
+    /* Entre arriba h2 1º y arriba 3º deja espacio */
+    margin-top: 20px;
+    /* relleno  entre elemento interior h2  separa up y down*/
+    padding: 20px;
+    /* borde: crea borde en contenido h2 */
+    border: 15px solid white;
+    /* Ancho de h2 */
+    width:190px;
+    /* Alto de h2 */
+    height: 150px;
+
+
+}
